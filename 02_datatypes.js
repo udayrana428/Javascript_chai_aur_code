@@ -65,5 +65,47 @@ function greet(name){
 console.log(heros,typeof(heros),myObj,typeof(myObj),greet("uday"),typeof(greet),typeof(greet("uday")))
 
 
+// Stack (All Primitive) and Heap (All Non Primitive)
+
+// Stack (Used in all Primitive types)
+
+let myYoutubeChannel = "GameXuday"
+
+let anotherYoutubeChannel = myYoutubeChannel
+
+console.log(myYoutubeChannel)
+console.log(anotherYoutubeChannel)
+
+anotherYoutubeChannel = "RonGaming"
+
+console.log(myYoutubeChannel)
+console.log(anotherYoutubeChannel)
+
+// What happens here we have set 2 variables. In anotherYoutubeChannel we have assigned the value of myYoutubeChannel so though we have changed the value of anotherYoutubeChannel but it will not affect the value of myYoutubeChannel because a COPY of myYoutubeChannel is been assigned to anotherYoutubeChannel. And this will happens in all the Primitive Datatypes vairable because of it uses STACK Memory.
+
+// Heap (Used in all Non Primitive type)
+
+let user = {
+    email: "uday@gmail.com",
+    upi: "uday@ybl"
+}
+
+let user2 = user
+
+console.log(user.email)
+console.log(user2.email)
+
+// Now if i change user2's any field value then the value of user will also changes
+
+user2.email="rana@gmail.com"
+
+console.log(user.email)
+console.log(user2.email)
+
+// Now when you see the log both will give the same value rana@gmail.com though i haven't changed the value of user's field.
+// So this is due to all NON Primitive datatypes will use HEAP Memory. In this a reference of user is been assigned to user2 that's why whenever you do any changes to user2 automatically there will also change in user.
+
+
+
 
 
