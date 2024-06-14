@@ -22,6 +22,7 @@ let isLoggedIn = false
 // number => 2 to power 53
 // bigint (specially used in stocks where big number are used)
 // string => "uday"
+// boolean => true/false
 // null => standalone value
 // undefined => It means that the variable is declared but not assigned any value
 // symbol => To find the uniqueness of any component this datatype is used

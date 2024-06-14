@@ -46,7 +46,7 @@ console.log(stringSomeNumber, typeof(stringSomeNumber))
 // ******************Operations*************************
 let value = 3
 let negValue = -value
-console.log(negValue)
+console.log(negValue) // -3
 
 // Basic Operation
 
@@ -78,9 +78,11 @@ num1=num2=num3 =2+2
 console.table([num1,num2, num3])
 
 let gameCounter =100
-console.log(gameCounter)
+console.log(gameCounter) // 100
 gameCounter++
-console.log(gameCounter)
+console.log(gameCounter) // 101
 ++gameCounter
-console.log(gameCounter)
+console.log(gameCounter) // 102
+console.log(gameCounter++) // 102
+console.log(++gameCounter) // 104
 
