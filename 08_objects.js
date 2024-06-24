@@ -123,3 +123,61 @@ console.log(tinderUser)
 console.log(Object.keys(tinderUser)) // returns all the keys in the form of array
 console.log(Object.values(tinderUser)) // returns all the values in the form of array
 console.log(Object.entries(tinderUser)) // returns all the key, value as array of array
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+// Destructuring
+
+const course = {
+    courseName: "js in hindi",
+    price: 888,
+    courseInstructor: "uday"
+}
+
+// bad approches to access the data
+console.log(course.courseName)
+console.log(course.price)
+console.log(course.courseInstructor)
+
+// good approach to access the data
+const {courseName, price, courseInstructor} = course // we are destructuring the keys from the object so that we can use it further 
+console.log(courseName, price, courseInstructor)
+
+const {courseInstructor: instructor} = course
+console.log(instructor) // This is the naming convention of any key if we want to give it 
+
+const navbar = (props) =>{
+    console.log(props.company)
+}
+
+navbar({company: "valethi"})
+
+
+// JSON 
+
+// {
+//     "prodId": "123abc",
+//     "prodName": "Raza",
+//     "price": 5000
+// }
+
+// Array of objects
+
+// [
+//     {
+
+//     },
+//     {
+
+//     },
+//     {
+
+//     },
+// ]
+
+
+ 
+
+
+ 
+
